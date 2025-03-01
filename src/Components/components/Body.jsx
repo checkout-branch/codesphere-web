@@ -1,10 +1,40 @@
 import { Smartphone, Code, Server, Shield } from "lucide-react";
+import Img from '../../../public/lap.png'
+import { ContainerScroll } from "../ui/3d-card";
 const Body = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
+
+      <div>
+
+      <ContainerScroll
+
+titleComponent={
+  <>
+    <h1 className="text-4xl font-semibold  dark:text-white text-white">
+    Hi, I'm Salman Faris k, <br />
+      <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+      A Passionate Developer
+      </span>
+    </h1>
+  </>
+}
+>
+{/* Use the standard img tag if you're not using Next.js */}
+<img  
+
+  src={Img}
+  alt="hero"
+  height="720"
+  width="1400"
+  className="mx-auto rounded-2xl object-cover h-full object-left-top"
+  draggable="false"
+/>
+</ContainerScroll >
+      </div>
      
-      <section className="relative flex flex-col md:flex-row items-center justify-between px-8 md:px-24 lg:px-32 py-16 md:py-24 overflow-hidden">
+      <section className="min-h-screen relative flex flex-col md:flex-row items-center justify-between px-8 md:px-24 lg:px-32 py-16 md:py-24 overflow-hidden">
   <div className="w-full md:w-1/2 z-10 -ml-4 md:ml-16 mt-9">
     <h1 className="text-4xl md:text-5xl font-bold mb-4">Safeguarding the Digital Landscape</h1>
     <h2 className="text-3xl md:text-4xl font-bold mt-9">with Cutting-Edge Security.</h2>
@@ -35,7 +65,7 @@ const Body = () => {
 
       {/* Second Section */}
       <section
-  className="relative flex flex-col md:flex-row items-center  justify-center px-8 md:px-20 lg:px-32 py-16 md:py-24 max-w-6xl mx-auto bg-[url('/background.jpg')] bg-cover bg-center"
+  className="relative min-h-screen flex flex-col md:flex-row items-center  justify-center px-8 md:px-20 lg:px-32 py-16 md:py-24 max-w-6xl mx-auto bg-[url('/background.jpg')] bg-cover bg-center"
 >
   {/* Left Side - Main Image */}
   <div className="w-full md:w-1/2 flex justify-center relative">
