@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Menu } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    AOS.init();})
 
   return (
     <nav className="bg-gray-900 text-white py-4 px-6 border-b border-b-gray-700">
@@ -11,10 +16,19 @@ const Navbar = () => {
         <div className="text-xl font-bold uppercase md:hidden">LOGO</div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6 text-lg font-light uppercase">
-          <a href="#home" className="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition">Home</a>
-          <a href="#about" className="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition">About Us</a>
-          <a href="#projects" className="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition">Projects</a>
+        <div  className="hidden md:flex space-x-6 text-lg font-light uppercase">
+          
+          <a    data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="300"
+          
+          href="#home" className="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition">Home</a>
+          <a  data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="600"href="#about" className="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition">About Us</a>
+          <a  data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="900" href="#projects" className="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition">Projects</a>
         </div>
 
         {/* Center Logo (Only for larger screens) */}
