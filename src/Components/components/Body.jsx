@@ -66,33 +66,38 @@ const Body = () => {
 </section>
 
 {/* third section */}
-<section className="mx-auto h-[500px] border-y border-gray-700 flex">
-  <div className="border-r w-1/2 border-gray-700">
-    <div className="mx-64 mt-32 text-5xl font-medium space-y-2">
-      <h1>Poineering</h1>
+<section className="mx-auto max-w-7xl border-y border-gray-700 flex flex-col md:flex-row h-auto md:h-[500px]">
+  {/* Left Section */}
+  <div className="border-b md:border-b-0 md:border-r border-gray-700 w-full md:w-1/2 flex flex-col justify-center px-6 md:px-20 py-10 text-center md:text-left">
+    <div className="text-4xl md:text-5xl font-medium space-y-2">
+      <h1>Pioneering</h1>
       <h1>Blockchain</h1>
       <h1>Technology</h1>
     </div>
-    <button className="mt-14 ml-72 bg-blue-700 text-xs text-white px-4 font-light py-3 rounded-full hover:bg-blue-900 uppercase">
-      Request a Project
-    </button>
+    <div className="flex justify-center md:justify-start">
+      <button className="mt-10 bg-blue-700 text-xs text-white px-6 py-3 rounded-full hover:bg-blue-900 uppercase">
+        Request a Project
+      </button>
+    </div>
   </div>
-  <div className="grid grid-cols-1 md:grid-cols-2 border-gray-600">
+
+  {/* Right Section */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 w-full border-gray-700">
     {/* First Row */}
-    <div className="flex flex-col items-center text-center p-6 border-b border-r border-gray-600">
+    <div className="flex flex-col items-center text-center p-6 border-b sm:border-b-0 sm:border-r border-gray-700">
       <Smartphone size={40} className="text-gray-300 mb-3" />
       <h2 className="text-xl font-semibold mb-2">Mobile App Development</h2>
       <p className="text-gray-600">We build high-quality mobile applications tailored for iOS and Android.</p>
     </div>
 
-    <div className="flex flex-col items-center text-center p-6 border-b border-gray-600">
+    <div className="flex flex-col items-center text-center p-6 border-b border-gray-700 sm:border-b-0">
       <Code size={40} className="text-gray-300 mb-3" />
       <h2 className="text-xl font-semibold mb-2">UI/UX Design</h2>
       <p className="text-gray-600">Creating intuitive and engaging user interfaces for a seamless experience.</p>
     </div>
 
     {/* Second Row */}
-    <div className="flex flex-col items-center text-center p-6 border-r border-gray-600">
+    <div className="flex flex-col items-center text-center p-6 sm:border-r border-gray-700">
       <Server size={40} className="text-gray-300 mb-3" />
       <h2 className="text-xl font-semibold mb-2">Backend Development</h2>
       <p className="text-gray-600">Robust server-side solutions to ensure performance and security.</p>
@@ -105,6 +110,7 @@ const Body = () => {
     </div>
   </div>
 </section>
+
 
 
 {/* 4th section */}
@@ -163,6 +169,27 @@ const Body = () => {
     </div>
   </div>
 </section>
+
+
+{/* 6th section */}
+
+<section className="mx-auto max-w-7xl text-center py-16">
+  <h2 className="text-4xl font-semibold  mt-7">Our Platforms</h2>
+  
+  <div className="grid grid-cols-2 sm:grid-cols-3 mt-10 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center justify-center">
+    {/* Platform Logos */}
+    <img src="public/platform (9).jpg" alt="Flutter" className="h-16 mx-auto" />
+    <img src="/platform (2).jpg" alt="PostgreSQL" className="h-16 mx-auto" />
+    <img src="/platform (3).jpg" alt="MySQL" className="h-16 mx-auto" />
+    <img src="/platform (4).jpg" alt="React" className="h-16 mx-auto" />
+    <img src="/platform (5).jpg" alt="Figma" className="h-16 mx-auto" />
+    <img src="/platform (6).jpg" alt="Redis" className="h-16 mx-auto" />
+    <img src="/platform (7).jpg" alt="Golang" className="h-16 mx-auto" />
+  </div>
+
+  
+</section>
+
 
 
     </div>
